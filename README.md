@@ -16,7 +16,7 @@ ld -m elf_i386 -o lesson1 lesson1.o
 ./lesson1
 ```
 
-## Lesson2
+### Lesson2
 ```
 nasm -f elf32 -g -F dwarf -o lesson2.o lesson2.asm
 ```
