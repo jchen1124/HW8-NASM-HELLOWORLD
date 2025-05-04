@@ -1,8 +1,19 @@
-; Hello World Program - asmtutor.com
-; Compile with: nasm -f elf helloworld.asm
-; Link with (64 bit systems require elf_i386 option): ld -m elf_i386 helloworld.o -o helloworld
-; Run with: ./helloworld
- 
+; nasm -f elf32 -g -F dwarf -o lesson1.o lesson1.asm
+; nasm - used to compile assembly code
+; -f elf32 - 32 bit linus system
+; -g - debugging
+; -F dwarf - debugging format
+; -o lesson1.o - Output file name
+; lesson1.asm = The source file begin assembled
+
+
+; ld -m elf_i386 -o lesson1 lesson1.o
+; ld - The GNU linker
+; -m elf_i386 - 32bit intel architecture
+; -o lesson1 - output executable file name
+; lesson1.o - Object file 
+
+
 SECTION .data
 msg     db      'Hello World!', 0Ah     ; assign msg variable with your message string
  
